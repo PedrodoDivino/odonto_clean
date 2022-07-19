@@ -3,7 +3,6 @@ import {
     Flex,
     Text,
     IconButton,
-    Button,
     Stack,
     Collapse,
     Icon,
@@ -51,9 +50,10 @@ import {
             </Flex>
           </Box>
           <Box
-            display={{ base: 'flex', md: 'none' }}>
+            display={{ base: 'flex', md: 'none' }} color={'#0C63DF'}>
             <IconButton
               onClick={onToggle}
+              backgroundColor={'rgba(12, 99, 223, 0.15);'}
               icon={
                 isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />
               }

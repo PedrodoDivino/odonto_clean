@@ -5,7 +5,7 @@ function App() {
 
   return (
     <ChakraProvider>
-<WithSubnavigation />
+    <WithSubnavigation />
     </ChakraProvider>
   )
 }
