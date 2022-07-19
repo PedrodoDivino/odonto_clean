@@ -39,7 +39,8 @@ import {
           
           <Box>
            <Image
-           
+           px={{ base: 2 }}
+           width={'150px'}
            objectFit='cover'
            src={logo}
            alt='logo'
