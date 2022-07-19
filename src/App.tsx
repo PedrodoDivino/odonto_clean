@@ -16,7 +16,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Gustavo
+          Gustavo Lage
         </a>
       </header>
     </div>
