@@ -11,8 +11,8 @@ import {
     PopoverTrigger,
     PopoverContent,
     useColorModeValue,
-    useBreakpointValue,
     useDisclosure,
+    Image,
   } from '@chakra-ui/react';
   import {
     HamburgerIcon,
@@ -20,7 +20,7 @@ import {
     ChevronDownIcon,
     ChevronRightIcon,
   } from '@chakra-ui/icons';
-  
+  import logo from '../../svg/logo.svg'
   export default function WithSubnavigation() {
     const { isOpen, onToggle } = useDisclosure();
   
@@ -38,12 +38,12 @@ import {
           align={'center'} justify='space-between' >
           
           <Box>
-            <Text
-              textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
-              fontFamily={'heading'}
-              color={useColorModeValue('gray.800', 'white')}>
-              Logo
-            </Text>
+           <Image
+           
+           objectFit='cover'
+           src={logo}
+           alt='logo'
+         />
   
             <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
               <DesktopNav />
