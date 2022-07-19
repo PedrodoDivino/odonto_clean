@@ -223,41 +223,39 @@ import {
   
   const NAV_ITEMS: Array<NavItem> = [
     {
-      label: 'Inspiration',
-      children: [
-        {
-          label: 'Explore Design Work',
-          subLabel: 'Trending Design to inspire you',
-          href: '#',
-        },
-        {
-          label: 'New & Noteworthy',
-          subLabel: 'Up-and-coming Designers',
-          href: '#',
-        },
-      ],
+      label: 'Home',
+      href: '#',
     },
     {
-      label: 'Find Work',
+      label: 'Profissionais',
       children: [
         {
-          label: 'Job Board',
+          label: 'Pedro henrique',
           subLabel: 'Find your dream design job',
           href: '#',
         },
         {
-          label: 'Freelance Projects',
+          label: 'João silva',
           subLabel: 'An exclusive list for contract work',
           href: '#',
         },
       ],
     },
     {
-      label: 'Learn Design',
-      href: '#',
+      label: 'Tratamentos',
+      children: [
+        {
+          label: 'tratamento 1',
+          href: '#',
+        },
+        {
+          label: 'tratamento 2',
+          href: '#',
+        },
+      ],
     },
     {
-      label: 'Hire Designers',
+      label: 'Duvidas',
       href: '#',
     },
   ];
