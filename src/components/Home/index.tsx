@@ -1,24 +1,39 @@
-import { Box, Container, Flex, Image, Link, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Container,
+  Flex,
+  Grid,
+  Image,
+  Link,
+  Text,
+} from "@chakra-ui/react";
 import home_img from "../../assets/images/home_img.svg";
 import { ButtonWrapper } from "../ButtonWrapper";
 import whats_img from "../../assets/images/whats.svg";
 
 export const Home = () => {
   return (
-    <Box w="100%" h="410px">
-      <Box w="100%">
+    <Box w="full" h="410px" display={{ sm: "block", md: "flex" }}>
+      <Box
+        w="full"
+        order={{ sm: 1, md: 2 }}
+        display="flex"
+        alignItems={{ sm: "center", md: "start" }}
+        justifyContent="center"
+      >
         <Image
+          width="full"
           borderBottomLeftRadius="60px"
           src={home_img}
           alt="Dentista olhando para uma mulher sorrindo"
         />
       </Box>
-      <Container maxW="container.sm">
-        <Box w="100%">
+      <Box order={{ sm: 2, md: 1 }}>
+        <Box w="full">
           <Text
             fontSize="25px"
             fontWeight="medium"
-            mt="23px"
+            mt={{ sm: "23px", md: "50px", lg: "100px" }}
             color="rgba(2, 14, 31, 0.69)"
           >
             20 Anos de experiência
@@ -29,6 +44,7 @@ export const Home = () => {
             lineHeight="44px"
             fontWeight="bold"
             fontSize="39px"
+            mt={{ sm: "10px", md: "20px" }}
           >
             Realizando sonhos de um sorriso perfeito!
           </Box>
@@ -45,7 +61,7 @@ export const Home = () => {
             </Link>
           </Flex>
         </Box>
-      </Container>
+      </Box>
     </Box>
   );
 };
