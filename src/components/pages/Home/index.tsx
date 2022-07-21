@@ -1,16 +1,7 @@
-import {
-  Box,
-  Container,
-  Flex,
-  Grid,
-  Image,
-  Link,
-  Text,
-} from "@chakra-ui/react";
-import home_img from "../../assets/images/home_img.svg";
-import { ButtonWrapper } from "../ButtonWrapper";
-import whats_img from "../../assets/images/whats.svg";
-import lg_home_img from "../../assets/images/lg_home_img.svg";
+import { Box, Flex, Image, Link, Text } from "@chakra-ui/react";
+import { ButtonWrapper } from "../../ButtonWrapper";
+import whats_img from "../../../assets/images/whats.svg";
+import lg_home_img from "../../../assets/images/lg_home_img.svg";
 
 export const Home = () => {
   return (
