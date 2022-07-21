@@ -1,12 +1,18 @@
+import { ChakraProvider } from "@chakra-ui/react";
+import { Container } from "@chakra-ui/react";
+import { Home } from "./components/pages/Home";
+import WithSubnavigation from "./components/navbar/navbar";
+import { Differential } from "./components/pages/Differential";
 
-import { ChakraProvider } from '@chakra-ui/react'
-import WithSubnavigation  from './components/navbar/navbar';
 function App() {
-
   return (
     <ChakraProvider>
-    <WithSubnavigation />
+      <Container maxW={{ sm: "768px", lg: "960px", xl: "1200px" }} h="100vh">
+        <WithSubnavigation />
+        <Home />
+        <Differential />
+      </Container>
     </ChakraProvider>
-  )
+  );
 }
 export default App;

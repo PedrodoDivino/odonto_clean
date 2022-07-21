@@ -20,7 +20,9 @@ import {
   ChevronDownIcon,
   ChevronRightIcon,
 } from "@chakra-ui/icons";
-import logo from "../../svg/logo.svg";
+
+import logo from "../../assets/images/logo.svg";
+
 export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
 
@@ -46,9 +48,7 @@ export default function WithSubnavigation() {
             src={logo}
             alt="logo"
           />
-
-       
-        </Box>
+              </Box>
         <Flex display={{ base: "none", md: "flex" }} ml={10}>
             <DesktopNav />
           </Flex>
@@ -70,7 +70,6 @@ export default function WithSubnavigation() {
     </Box>
   );
 }
-
 const DesktopNav = () => {
   const linkColor = useColorModeValue("gray.600", "gray.200");
   const linkHoverColor = useColorModeValue("gray.800", "white");
