@@ -49,7 +49,7 @@ export default function WithSubnavigation() {
             alt="logo"
           />
               </Box>
-        <Flex display={{ base: "none", md: "flex" }} ml={10}>
+        <Flex display={{ base: "none", md: "flex" }} ml={10}  marginRight={220}>
             <DesktopNav />
           </Flex>
         <Box display={{ base: "flex", md: "none" }} color={"#0C63DF"}>
