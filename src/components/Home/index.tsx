@@ -10,6 +10,7 @@ import {
 import home_img from "../../assets/images/home_img.svg";
 import { ButtonWrapper } from "../ButtonWrapper";
 import whats_img from "../../assets/images/whats.svg";
+import lg_home_img from "../../assets/images/lg_home_img.svg";
 
 export const Home = () => {
   return (
@@ -20,11 +21,12 @@ export const Home = () => {
         display="flex"
         alignItems={{ sm: "center", md: "start" }}
         justifyContent="center"
+        mb="25px"
       >
         <Image
           width="full"
           borderBottomLeftRadius="60px"
-          src={home_img}
+          src={lg_home_img}
           alt="Dentista olhando para uma mulher sorrindo"
         />
       </Box>
@@ -34,6 +36,7 @@ export const Home = () => {
             fontSize="25px"
             fontWeight="medium"
             mt={{ sm: "23px", md: "50px", lg: "100px" }}
+            mb="15px"
             color="rgba(2, 14, 31, 0.69)"
           >
             20 Anos de experiência
@@ -48,7 +51,7 @@ export const Home = () => {
           >
             Realizando sonhos de um sorriso perfeito!
           </Box>
-          <Flex align="center" mt="24px">
+          <Flex align="center" mt="30px">
             <ButtonWrapper imgIcon={whats_img} text="Entre em contato" />
             <Link
               href="#"
