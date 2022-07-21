@@ -43,7 +43,7 @@ export const Home = () => {
             Realizando sonhos de um sorriso perfeito!
           </Box>
           <Flex align="center" mt="30px">
-            <ButtonWrapper imgIcon={whats_img} text="Entre em contato" width="180px" />
+            <ButtonWrapper imgIcon={whats_img} text="Entre em contato" width="180px"  />
             <Link
               href="#"
               ml="17px"

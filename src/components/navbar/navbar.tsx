@@ -54,9 +54,10 @@ export default function WithSubnavigation() {
         <Flex display={{ base: "none", md: "flex" }} ml={10}  marginRight={50}>
             <DesktopNav /> 
              < ButtonWrapper 
-            text="agendar"
+            text="Agendar"
             imgIcon={agendar}
             width="139px"
+            marginLeft="15px"
              />
           </Flex>
         <Box display={{ base: "flex", md: "none" }} color={"#0C63DF"}>
