@@ -45,7 +45,6 @@ export const Treatments = () => {
             width={"178px"}
             marginTop={"15px"}
             padding={"20px"}
-            
             /> 
            : 
            < ButtonWrapper
@@ -53,7 +52,6 @@ export const Treatments = () => {
             text="Mostrar Menos"
             width={"178px"}
             padding={"20px"}
-            
             />}
         </button>
       }
