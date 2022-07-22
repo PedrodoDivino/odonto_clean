@@ -3,16 +3,19 @@ import { Image, Link } from "@chakra-ui/react";
 type ButtonProps = {
   text: string;
   imgIcon: string;
+  width: string;
+  marginLeft?: string;
 };
 
-export const ButtonWrapper = ({ text, imgIcon }: ButtonProps) => {
+export  const ButtonWrapper = ({ text, imgIcon, width, marginLeft }: ButtonProps) => {
   return (
     <Link
       display="flex"
       alignItems="center"
       justifyContent="center"
-      w="180px"
+      w={width}
       h="32px"
+      ml={marginLeft}
       colorScheme="white"
       bgGradient="linear(rgba(32, 152, 227, 1), rgba(12, 99, 223, 1))"
       href="#"
