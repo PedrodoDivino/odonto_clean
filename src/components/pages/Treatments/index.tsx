@@ -42,12 +42,19 @@ export const Treatments = () => {
           {state <= 4 ? < ButtonWrapper
            imgIcon={seta_baixo}
             text="Mostrar mais"
-            width={"178px"} /> 
+            width={"178px"}
+            marginTop={"15px"}
+            padding={"20px"}
+            
+            /> 
            : 
            < ButtonWrapper
             imgIcon={seta_baixo}
             text="Mostrar Menos"
-            width={"178px"} />}
+            width={"178px"}
+            padding={"20px"}
+            
+            />}
         </button>
       }
     </Box>
