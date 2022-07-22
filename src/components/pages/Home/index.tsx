@@ -5,7 +5,7 @@ import lg_home_img from "../../../assets/images/lg_home_img.svg";
 
 export const Home = () => {
   return (
-    <Box w="full" h="410px" display={{ sm: "block", md: "flex" }}>
+    <Box w="full" h="auto" display={{ sm: "block", md: "flex" }}>
       <Box
         w="full"
         order={{ sm: 1, md: 2 }}
