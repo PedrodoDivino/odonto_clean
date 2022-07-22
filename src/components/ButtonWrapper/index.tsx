@@ -3,15 +3,16 @@ import { Image, Link } from "@chakra-ui/react";
 type ButtonProps = {
   text: string;
   imgIcon: string;
+  width: string;
 };
 
-export const ButtonWrapper = ({ text, imgIcon }: ButtonProps) => {
+export const ButtonWrapper = ({ text, imgIcon, width }: ButtonProps) => {
   return (
     <Link
       display="flex"
       alignItems="center"
       justifyContent="center"
-      w="180px"
+      w={width}
       h="32px"
       colorScheme="white"
       bgGradient="linear(rgba(32, 152, 227, 1), rgba(12, 99, 223, 1))"
