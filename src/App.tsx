@@ -1,7 +1,7 @@
 import { ChakraProvider } from "@chakra-ui/react";
 import { Container } from "@chakra-ui/react";
 import { Home } from "./components/pages/Home";
-import WithSubnavigation from "./components/navbar/navbar";
+import WithSubnavigation from "./components/Navbar/navbar";
 import { Differential } from "./components/pages/Differential";
 import { Treatments } from "./components/pages/Treatments";
 
