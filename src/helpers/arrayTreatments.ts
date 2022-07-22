@@ -36,13 +36,13 @@ export const arrayTreatments: JsonProps[] = [
   {
     id:5,
     icon: check ,
-    title: "",
-    text: "",
+    title: "Clareamento",
+    text: "O clareamento dental consiste em utilizar produtos à base de peróxido de hidrogênio, que, quando em contato com a superfície dos dentes, conseguem quebrar as moléculas pigmentadas, dissociando-as em moléculas menores e deixando o dente mais claro, segundo o dentista William Kabach",
   },
   {
     id: 6,
     icon: check ,
-    title: "",
-    text: "",
+    title: "Lentes e facetas de porcelana",
+    text: "A faceta é um pouco mais grossa, e envolve preparo do dente (desgaste do dente). A Lente de Contato Dental é extremamente mais fina e exige pouco ou nenhum preparo no dente ( desgaste dental ), ou seja, a lente de contato é um procedimento que desgasta menos o dente.",
   },
 ];
