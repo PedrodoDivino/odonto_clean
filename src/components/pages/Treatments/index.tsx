@@ -8,6 +8,8 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { useState } from "react";
+import { ButtonWrapper } from "../../ButtonWrapper/index"
+import  seta_baixo from "../../../assets/images/seta_baixo.svg"
 
 import { arrayTreatments } from "../../../helpers/arrayTreatments";
 export const Treatments = () => {
@@ -37,7 +39,15 @@ export const Treatments = () => {
             state <= 4 ? setState(6) : setState(4);
           }}
         >
-          {state <= 4 ? "MOSTRAR MAIS" : "MOSTRAR MENOS"}
+          {state <= 4 ? < ButtonWrapper
+           imgIcon={seta_baixo}
+            text="Mostrar mais"
+            width={"178px"} /> 
+           : 
+           < ButtonWrapper
+            imgIcon={seta_baixo}
+            text="Mostrar Menos"
+            width={"178px"} />}
         </button>
       }
     </Box>
