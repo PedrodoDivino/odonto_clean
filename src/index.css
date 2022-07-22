@@ -11,3 +11,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.css-nd8846  :nth-child(4){
+border-right: solid 1px rgb(225, 224, 224);
+padding-right: 5px;
+}

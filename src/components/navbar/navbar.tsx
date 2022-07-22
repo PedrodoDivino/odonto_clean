@@ -20,7 +20,10 @@ import {
   ChevronDownIcon,
   ChevronRightIcon,
 } from "@chakra-ui/icons";
+
 import logo from "../../assets/images/logo.svg";
+import { ButtonWrapper } from '../ButtonWrapper/index';
+import agendar from  '../../assets/images/agendar.svg';
 export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
 
@@ -46,11 +49,17 @@ export default function WithSubnavigation() {
             src={logo}
             alt="logo"
           />
-
-          <Flex display={{ base: "none", md: "flex" }} ml={10}>
-            <DesktopNav />
+              </Box>
+   
+        <Flex display={{ base: "none", md: "flex" }} ml={10}  marginRight={50}>
+            <DesktopNav /> 
+             < ButtonWrapper 
+            text="Agendar"
+            imgIcon={agendar}
+            width="139px"
+            marginLeft="15px"
+             />
           </Flex>
-        </Box>
         <Box display={{ base: "flex", md: "none" }} color={"#0C63DF"}>
           <IconButton
             onClick={onToggle}
@@ -69,7 +78,6 @@ export default function WithSubnavigation() {
     </Box>
   );
 }
-
 const DesktopNav = () => {
   const linkColor = useColorModeValue("gray.600", "gray.200");
   const linkHoverColor = useColorModeValue("gray.800", "white");

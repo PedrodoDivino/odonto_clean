@@ -4,9 +4,10 @@ type ButtonProps = {
   text: string;
   imgIcon: string;
   width: string;
+  marginLeft?: string;
 };
 
-export const ButtonWrapper = ({ text, imgIcon, width }: ButtonProps) => {
+export  const ButtonWrapper = ({ text, imgIcon, width, marginLeft }: ButtonProps) => {
   return (
     <Link
       display="flex"
@@ -14,6 +15,7 @@ export const ButtonWrapper = ({ text, imgIcon, width }: ButtonProps) => {
       justifyContent="center"
       w={width}
       h="32px"
+      ml={marginLeft}
       colorScheme="white"
       bgGradient="linear(rgba(32, 152, 227, 1), rgba(12, 99, 223, 1))"
       href="#"
