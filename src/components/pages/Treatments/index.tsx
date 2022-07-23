@@ -12,9 +12,9 @@ import { ButtonWrapper } from "../../ButtonWrapper/index"
 import  seta_baixo from "../../../assets/images/seta_baixo.svg"
 
 import { arrayTreatments } from "../../../helpers/arrayTreatments";
+
 export const Treatments = () => {
   const [state, setState] = useState(4);
-  const [changeClass, setchangeClass] = useState();
   return (
     <Box w="full" h="auto" mt="64px">
       <Heading size="xl"  mb="-64px">
@@ -29,7 +29,11 @@ export const Treatments = () => {
                   <Image src={infos.icon}mb="9px" marginRight="7px" />
                   <LinkOverlay mb="9px">{infos.title} </LinkOverlay>
                 </Heading>
-              <Text textAlign="left" >{infos.text}</Text>
+             { state <=4 ? (
+               <Text textAlign="left" opacity={(state <=4 && infos.id == 3) || (infos.id == 4) ? "25%" : "none"} >{infos.text}</Text>
+             ):(
+              <Text textAlign="left" opacity= "none" >{infos.text}</Text>
+             )}
             </LinkBox>
           );
         })}
