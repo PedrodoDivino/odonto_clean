@@ -5,6 +5,18 @@ type ButtonProps = {
   imgIcon: string;
   width?: string;
   marginLeft?: string;
+  bgColor: string;
+  colorfont: string;
+};
+
+export const ButtonWrapper = ({
+  text,
+  imgIcon,
+  width,
+  marginLeft,
+  bgColor,
+  colorfont,
+}: ButtonProps) => {
   marginTop?: string;
   padding?: string;
 };
@@ -19,10 +31,11 @@ export  const ButtonWrapper = ({ text, imgIcon, width, marginLeft, marginTop, pa
       h="32px"
       ml={marginLeft}
       colorScheme="white"
-      bgGradient="linear(rgba(32, 152, 227, 1), rgba(12, 99, 223, 1))"
+      bgGradient={bgColor}
+      bg={bgColor}
       href="#"
       fontWeight="600"
-      color="#ffffff"
+      color={colorfont}
       fontSize="16px"
       borderRadius="5px"
       mt={marginTop}

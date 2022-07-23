@@ -12,12 +12,17 @@ import { arrayCards } from "../../../helpers/arrayCards";
 
 export const Differential = () => {
   return (
-    <Box w="full" h="auto" mt="64px">
+    <Box
+      w="full"
+      h="auto"
+      mt="64px"
+      borderBottom="2px solid rgba(2, 14, 31, 0.09)"
+    >
       <Heading size="xl" my="3" mb="35px">
         Diferencial
       </Heading>
 
-      <SimpleGrid columns={[1, 2, 3]} gap="30px">
+      <SimpleGrid columns={[1, 2, 3]} gap="30px" mb="100px">
         {arrayCards.map((infos) => (
           <LinkBox
             transition="all 0.3s"
