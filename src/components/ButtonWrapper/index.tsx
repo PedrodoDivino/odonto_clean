@@ -3,7 +3,7 @@ import { Image, Link } from "@chakra-ui/react";
 type ButtonProps = {
   text: string;
   imgIcon: string;
-  width: string;
+  width?: string;
   marginLeft?: string;
   bgColor: string;
   colorfont: string;
@@ -17,6 +17,11 @@ export const ButtonWrapper = ({
   bgColor,
   colorfont,
 }: ButtonProps) => {
+  marginTop?: string;
+  padding?: string;
+};
+
+export  const ButtonWrapper = ({ text, imgIcon, width, marginLeft, marginTop, padding }: ButtonProps) => {
   return (
     <Link
       display="flex"
@@ -33,6 +38,9 @@ export const ButtonWrapper = ({
       color={colorfont}
       fontSize="16px"
       borderRadius="5px"
+      mt={marginTop}
+      padding={padding}
+      
     >
       <Image
         mr="6px"
