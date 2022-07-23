@@ -1,10 +1,9 @@
-import { ChakraProvider } from "@chakra-ui/react";
+import { ChakraProvider, theme } from "@chakra-ui/react";
 import { Container } from "@chakra-ui/react";
 import { Home } from "./components/pages/Home";
 import WithSubnavigation from "./components/navbar/navbar";
 import { Differential } from "./components/pages/Differential";
 import { RetanguloPage } from "./components/pages/RetanguloPage";
-import { theme } from "./styles/theme";
 
 function App() {
   return (

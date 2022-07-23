@@ -2,13 +2,15 @@ import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
 import { ButtonWrapper } from "../../ButtonWrapper";
 import agendar_black from "../../../assets/images/agendar_black.svg";
 import homem_no_dentista from "../../../assets/images/homem_no_dentista.svg";
+import homem_no_dentistamb from "../../../assets/images/homem_no_dentistamb.svg";
+import { useState } from "react";
 
 export const RetanguloPage = () => {
+  const [img, setImage] = useState({});
   return (
     <Box
       w="full"
       boxShadow=" 10px 10px 30px rgba(55, 121, 215, 0.25)"
-      // h="auto"
       bg="#2098E3"
       borderRadius="20px"
       mt="60px"
@@ -44,7 +46,7 @@ export const RetanguloPage = () => {
       <Box h="full">
         <Image
           boxSize="200%"
-          src={homem_no_dentista}
+          src={homem_no_dentistamb}
           alt="Homem sendo atendido por um dentista"
         />
       </Box>
