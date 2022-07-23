@@ -22,8 +22,8 @@ import {
 } from "@chakra-ui/icons";
 
 import logo from "../../assets/images/logo.svg";
-import { ButtonWrapper } from '../ButtonWrapper/index';
-import agendar from  '../../assets/images/agendar.svg';
+import { ButtonWrapper } from "../ButtonWrapper/index";
+import agendar from "../../assets/images/agendar.svg";
 export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
 
@@ -49,17 +49,19 @@ export default function WithSubnavigation() {
             src={logo}
             alt="logo"
           />
-              </Box>
-   
-        <Flex display={{ base: "none", md: "flex" }} ml={10}  marginRight={50}>
-            <DesktopNav /> 
-             < ButtonWrapper 
+        </Box>
+
+        <Flex display={{ base: "none", md: "flex" }} ml={10} marginRight={50}>
+          <DesktopNav />
+          <ButtonWrapper
+            colorfont="#fff"
+            bgColor="linear(rgba(32, 152, 227, 1), rgba(12, 99, 223, 1))"
             text="Agendar"
             imgIcon={agendar}
             width="139px"
             marginLeft="15px"
-             />
-          </Flex>
+          />
+        </Flex>
         <Box display={{ base: "flex", md: "none" }} color={"#0C63DF"}>
           <IconButton
             onClick={onToggle}

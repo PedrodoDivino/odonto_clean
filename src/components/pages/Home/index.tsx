@@ -44,6 +44,8 @@ export const Home = () => {
           </Box>
           <Flex align="center" mt="30px">
             <ButtonWrapper
+              colorfont="#fff"
+              bgColor="linear(rgba(32, 152, 227, 1), rgba(12, 99, 223, 1))"
               imgIcon={whats_img}
               text="Entre em contato"
               width="180px"
