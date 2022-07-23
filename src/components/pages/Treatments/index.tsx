@@ -29,7 +29,11 @@ export const Treatments = () => {
                   <Image src={infos.icon}mb="9px" marginRight="7px" />
                   <LinkOverlay mb="9px">{infos.title} </LinkOverlay>
                 </Heading>
-              <Text textAlign="left" opacity={state <= 4 && infos.id == 3 ||  infos.id == 4 ? "25%": "none"} >{infos.text}</Text>
+             { state <=4 ? (
+               <Text textAlign="left" opacity={(state <=4 && infos.id == 3) || (infos.id == 4) ? "25%" : "none"} >{infos.text}</Text>
+             ):(
+              <Text textAlign="left" opacity= "none" >{infos.text}</Text>
+             )}
             </LinkBox>
           );
         })}
