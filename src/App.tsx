@@ -1,9 +1,10 @@
 import { ChakraProvider, theme } from "@chakra-ui/react";
 import { Container } from "@chakra-ui/react";
 import { Home } from "./components/pages/Home";
-import WithSubnavigation from "./components/navbar/navbar";
 import { Differential } from "./components/pages/Differential";
 import { RetanguloPage } from "./components/pages/RetanguloPage";
+import { Treatments } from "./components/pages/Treatments";
+import WithSubnavigation from "./components/navbar/navbar";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <WithSubnavigation />
         <Home />
         <Differential />
+        <Treatments />
         <RetanguloPage />
       </Container>
     </ChakraProvider>

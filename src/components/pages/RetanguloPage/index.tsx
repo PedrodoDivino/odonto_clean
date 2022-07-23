@@ -1,12 +1,11 @@
 import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
 import { ButtonWrapper } from "../../ButtonWrapper";
 import agendar_black from "../../../assets/images/agendar_black.svg";
-import homem_no_dentista from "../../../assets/images/homem_no_dentista.svg";
 import homem_no_dentistamb from "../../../assets/images/homem_no_dentistamb.svg";
-import { useState } from "react";
+// import { useState } from "react";
 
 export const RetanguloPage = () => {
-  const [img, setImage] = useState({});
+  // const [img, setImage] = useState({});
   return (
     <Box
       w="full"
