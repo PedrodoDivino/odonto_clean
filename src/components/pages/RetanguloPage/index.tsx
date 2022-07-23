@@ -8,13 +8,21 @@ export const RetanguloPage = () => {
     <Box
       w="full"
       boxShadow=" 10px 10px 30px rgba(55, 121, 215, 0.25)"
-      h="auto"
+      // h="auto"
       bg="#2098E3"
       borderRadius="20px"
       mt="60px"
       mb="60px"
+      display="flex"
+      flexDirection={{ base: "column", md: "row" }}
     >
-      <Flex p={4} align="start" justify="space-around" direction="column">
+      <Flex
+        w={{ base: "100%", md: "70%" }}
+        align="start"
+        justify="space-around"
+        direction="column"
+        p={[4, 4, 8, 16]}
+      >
         <Heading size="xl" color="#fff" mb="15px" lineHeight="35px">
           Venha fazer uma visita e conhecer nossa clínica!
         </Heading>
@@ -33,8 +41,9 @@ export const RetanguloPage = () => {
         />
       </Flex>
 
-      <Box mt="20px">
+      <Box h="full">
         <Image
+          boxSize="200%"
           src={homem_no_dentista}
           alt="Homem sendo atendido por um dentista"
         />
