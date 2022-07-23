@@ -73,6 +73,7 @@ export const Treatments = () => {
               padding={"20px"}
             />
           )}
+
         </button>
       }
     </Box>

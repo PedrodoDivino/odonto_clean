@@ -43,7 +43,7 @@ export const Home = () => {
             Realizando sonhos de um sorriso perfeito!
           </Box>
           <Flex align="center" mt="30px">
-            <ButtonWrapper
+            <ButtonWrapper 
               colorfont="#fff"
               bgColor="linear(rgba(32, 152, 227, 1), rgba(12, 99, 223, 1))"
               imgIcon={whats_img}

@@ -9,8 +9,9 @@ import WithSubnavigation from "./components/navbar/navbar";
 function App() {
   return (
     <ChakraProvider theme={theme}>
+      
+       <WithSubnavigation  />
       <Container maxW={{ sm: "768px", lg: "960px", xl: "1200px" }} h="100vh">
-        <WithSubnavigation />
         <Home />
         <Differential />
         <Treatments />
