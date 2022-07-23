@@ -13,6 +13,7 @@ import {
   useColorModeValue,
   useDisclosure,
   Image,
+  Container,
 } from "@chakra-ui/react";
 import {
   HamburgerIcon,
@@ -20,7 +21,6 @@ import {
   ChevronDownIcon,
   ChevronRightIcon,
 } from "@chakra-ui/icons";
-
 import logo from "../../assets/images/logo.svg";
 import { ButtonWrapper } from "../ButtonWrapper/index";
 import agendar from "../../assets/images/agendar.svg";
@@ -28,13 +28,18 @@ export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
-    <Box>
+ 
+    <Box  
+    bg={useColorModeValue("#F2F5FA", "gray.800")}
+    boxShadow={"0px 10px 25px  rgba(55, 121, 215, 0.25);"}
+    >
+       <Container maxW={{ sm: "768px", lg: "960px", xl: "1200px" }}>
       <Flex
-        bg={useColorModeValue("white", "gray.800")}
         color={useColorModeValue("gray.600", "white")}
+
         minH={"60px"}
         py={{ base: 2 }}
-        px={{ base: 4 }}
+
         borderBottom={1}
         borderStyle={"solid"}
         borderColor={useColorModeValue("gray.200", "gray.900")}
@@ -51,7 +56,7 @@ export default function WithSubnavigation() {
           />
         </Box>
 
-        <Flex display={{ base: "none", md: "flex" }} ml={10} marginRight={50}>
+        <Flex display={{ base: "none", md: "flex" }} ml={10}>
           <DesktopNav />
           <ButtonWrapper
             colorfont="#fff"
@@ -74,10 +79,12 @@ export default function WithSubnavigation() {
           />
         </Box>
       </Flex>
+      </Container >
       <Collapse in={isOpen} animateOpacity>
         <MobileNav />
       </Collapse>
     </Box>
+ 
   );
 }
 const DesktopNav = () => {

@@ -44,7 +44,8 @@ export const Treatments = () => {
             state <= 4 ? setState(6) : setState(4);
           }}
         >
-          {state <= 4 ? < ButtonWrapper
+          {state <= 4 ? < ButtonWrapper 
+           bgColor="linear(rgba(32, 152, 227, 1), rgba(12, 99, 223, 1))"
            imgIcon={seta_baixo}
             text="Mostrar mais"
             width={"178px"}
@@ -52,7 +53,8 @@ export const Treatments = () => {
             padding={"20px"}
             /> 
            : 
-           < ButtonWrapper
+           < ButtonWrapper 
+            bgColor="linear(rgba(32, 152, 227, 1), rgba(12, 99, 223, 1))"
             imgIcon={seta_baixo}
             text="Mostrar Menos"
             width={"178px"}

@@ -6,22 +6,13 @@ type ButtonProps = {
   width?: string;
   marginLeft?: string;
   bgColor: string;
-  colorfont: string;
-};
-
-export const ButtonWrapper = ({
-  text,
-  imgIcon,
-  width,
-  marginLeft,
-  bgColor,
-  colorfont,
-}: ButtonProps) => {
-  marginTop?: string;
+  colorfont?: string;
   padding?: string;
+  marginTop?: string;
+
 };
 
-export  const ButtonWrapper = ({ text, imgIcon, width, marginLeft, marginTop, padding }: ButtonProps) => {
+export  const ButtonWrapper = ({ text, imgIcon, width, marginLeft, marginTop, padding, bgColor, colorfont }: ButtonProps) => {
   return (
     <Link
       display="flex"
