@@ -7,9 +7,8 @@ type ButtonProps = {
   marginLeft?: string;
   bgColor: string;
   colorfont?: string;
-  padding?: string;
   marginTop?: string;
-
+  padding?: string;
 };
 
 export  const ButtonWrapper = ({ text, imgIcon, width, marginLeft, marginTop, padding, bgColor, colorfont }: ButtonProps) => {
@@ -31,7 +30,6 @@ export  const ButtonWrapper = ({ text, imgIcon, width, marginLeft, marginTop, pa
       borderRadius="5px"
       mt={marginTop}
       padding={padding}
-      
     >
       <Image
         mr="6px"
