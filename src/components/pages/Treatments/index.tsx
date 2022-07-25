@@ -23,7 +23,7 @@ export const Treatments = () => {
       </Heading>
 
       <SimpleGrid columns={[1, 2]}>
-        {/* [] */}
+
         {arrayTreatments.slice(0, state).map((infos) => {
           return (
             <LinkBox mt="94px" mr="30px" key={infos.id}>
@@ -35,11 +35,6 @@ export const Treatments = () => {
                 <Text
                   textAlign="left"
                   className={infos.id === 3 || infos.id === 4 ? "text" : ""}
-                  opacity={
-                    (state <= 4 && infos.id === 3) || infos.id == 4
-                      ? "25%"
-                      : "none"
-                  }
                 >
                   {infos.text}
                 </Text>
