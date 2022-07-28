@@ -11,3 +11,14 @@ code {
   border-right: solid 1px rgb(225, 224, 224);
   padding-right: 5px;
 }
+
+/* @media only screen and (max-width: 991px) {
+  .img_rectangulo {
+    width: 90%;
+    background-color: brown;
+  }
+
+  .img_box {
+    height: 100%;
+  }
+} */

@@ -1,8 +1,8 @@
 import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
 import { ButtonWrapper } from "../../ButtonWrapper";
 import agendar_black from "../../../assets/images/agendar_black.svg";
-import homem_no_dentistamb from "../../../assets/images/homem_no_dentistamb.svg";
-import homem_no_dentista from "../../../assets/images/homem_no_dentista.svg";
+import homem_no_dentistamb from "../../../assets/images/homem_no_dentistamb.png";
+import homem_no_dentista from "../../../assets/images/homem_no_dentista.png";
 import { useBreakpointValue } from "@chakra-ui/react";
 
 export const RetanguloPage = () => {
@@ -13,7 +13,7 @@ export const RetanguloPage = () => {
   return (
     <Flex w="full" display="flex" justify="center">
       <Box
-        w="75%"
+        w={{ base: "full", md: "75%" }}
         boxShadow=" 10px 10px 30px rgba(55, 121, 215, 0.25)"
         bg="#2098E3"
         borderRadius="20px"
@@ -28,13 +28,13 @@ export const RetanguloPage = () => {
           align="start"
           justify="center"
           direction="column"
-          ml={{ sm: "40px", md: "70px" }}
-          mt={{ sm: "40px", md: "0px" }}
-          mb={{ sm: "40px", md: "0px" }}
-          // p={[4, 4, 8, 16]}
+          // ml={{ sm: "40px", md: "70px" }}
+          // mt={{ sm: "40px", md: "0px" }}
+          // mb={{ sm: "40px", md: "0px" }}
+          p={[4, 4, 8, 16]}
         >
           <Heading
-            size={["sm", "md", "lg"]}
+            size={["md", "md", "lg"]}
             color="#fff"
             mb="15px"
             lineHeight="35px"
@@ -58,7 +58,12 @@ export const RetanguloPage = () => {
         </Flex>
 
         <Box h="full">
-          <Image src={variant} alt="Homem sendo atendido por um dentista" />
+          <Image
+            w="full"
+            src={variant}
+            alt="Homem sendo atendido por um dentista"
+            h="full"
+          />
         </Box>
       </Box>
     </Flex>
