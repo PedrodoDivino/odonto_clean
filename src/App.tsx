@@ -5,6 +5,7 @@ import { Differential } from "./components/pages/Differential";
 import { RetanguloPage } from "./components/pages/RetanguloPage";
 import { Treatments } from "./components/pages/Treatments";
 import WithSubnavigation from "./components/navbar/navbar";
+import { Carousel } from "./components/pages/Carousel";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Home />
         <Differential />
         <Treatments />
+        <Carousel />
         <RetanguloPage />
       </Container>
     </ChakraProvider>
