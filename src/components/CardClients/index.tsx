@@ -11,7 +11,7 @@ export const CardClients = ({ id, text, name, client, image }: JsonProps) => {
       borderRadius="15px"
       key={id}
       mr="15px"
-      mb="20px"
+      mb="40px"
     >
       <Box
         h="full"
