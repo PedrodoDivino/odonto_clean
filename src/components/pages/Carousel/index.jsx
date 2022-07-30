@@ -4,7 +4,6 @@ import {
   Image,
   LinkBox,
   LinkOverlay,
-  SimpleGrid,
   Text,
 } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
@@ -19,7 +18,7 @@ export const Carousel = () => {
 
     fetch(arrayCarousel).
     then((Response) => Response.json())
-    .then(console.log(arrayCarousel));
+    .then(setdata);
     return () => {
 
     }
@@ -32,22 +31,29 @@ if (!data || data.length) return null
       h="auto"
       mt="64px"
       borderBottom="2px solid rgba(2, 14, 31, 0.09)"
-    >
+       >
       <Heading size="xl" my="3" mb="35px">
         Dentistas Certificados
       </Heading>
-
-      <SimpleGrid columns={[1, 2, 4]} mb="100px">
+      <Box 
+      display= 'flex'
+      overflowX='scroll'
+      flexDirection='row'
+      >
         {arrayCarousel.map((infos) => (
           <LinkBox
 
-            as="article"
-            maxW="sm"
+            mr='15px'
+            minW="sm"
+            mb='20px'
             borderWidth="1px"
-            rounded="md"
             key={infos.id}
           >
-            <Box display="flex" justifyContent="center" >
+            <Box display="flex" 
+            justifyContent='center'
+             flexDirection='column'
+
+             >
               <Image
                 src={infos.image}
                 bgColor="rgba(32, 152, 227, 0.15)"
@@ -61,7 +67,7 @@ if (!data || data.length) return null
             <Text textAlign="center">{infos.description}</Text>
           </LinkBox>
         ))}
-      </SimpleGrid>
+      </Box>
     </Box>
   );
 };

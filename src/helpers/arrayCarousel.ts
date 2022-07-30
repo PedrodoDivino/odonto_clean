@@ -34,6 +34,28 @@ export const arrayCarousel: JsonProps[] = [
     image: Foto_doutor4 ,
     title: "Dra. Melissa",
     description: "Implantodentista",
+  },  {
+    id: 5,
+    image: Foto_doutor1 ,
+    title: "Dr. Pedro Ribeiro",
+    description: "Ortodontista",
+  },
+  {
+    id: 6,
+    image: Foto_doutor2 ,
+    title: "Dra. Katarina Alves",
+    description: "Clínica geral",
+  },
+  {
+    id: 7,
+    image: Foto_doutor3 ,
+    title: "Dr. Gustavo Ramos",
+    description: "Odontopediatra",
+  }, {
+    id: 8,
+    image: Foto_doutor4 ,
+    title: "Dra. Melissa",
+    description: "Implantodentista",
   },
 
 ];
