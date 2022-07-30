@@ -16,14 +16,3 @@ code {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-/* @media only screen and (max-width: 991px) {
-  .img_rectangulo {
-    width: 90%;
-    background-color: brown;
-  }
-
-  .img_box {
-    height: 100%;
-  }
-} */

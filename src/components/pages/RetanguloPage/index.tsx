@@ -28,9 +28,6 @@ export const RetanguloPage = () => {
           align="start"
           justify="center"
           direction="column"
-          // ml={{ sm: "40px", md: "70px" }}
-          // mt={{ sm: "40px", md: "0px" }}
-          // mb={{ sm: "40px", md: "0px" }}
           p={[4, 4, 8, 16]}
         >
           <Heading
