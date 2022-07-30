@@ -7,6 +7,7 @@ import { Treatments } from "./components/pages/Treatments";
 import WithSubnavigation from "./components/navbar/navbar";
 import { Carousel } from "./components/pages/Carousel";
 import { Footer } from "./components/Footer";
+import { Clients } from "./components/pages/Clients";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Treatments />
         <Carousel />
         <RetanguloPage />
+        <Clients />
       </Container>
       <Footer />
     </ChakraProvider>
