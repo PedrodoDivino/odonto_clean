@@ -152,7 +152,7 @@ export const Footer = () => {
             </Stack>
           </Stack>
         </Stack>
-        <Divider />
+        <Divider borderWidth="2px" color="rgba(2, 14, 31, 0.09)" />
         <Stack
           pt="8"
           pb="12"
