@@ -6,19 +6,20 @@ import { RetanguloPage } from "./components/pages/RetanguloPage";
 import { Treatments } from "./components/pages/Treatments";
 import WithSubnavigation from "./components/navbar/navbar";
 import { Carousel } from "./components/pages/Carousel";
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      
-       <WithSubnavigation  />
-      <Container maxW={{ sm: "768px", lg: "960px", xl: "1200px" }} h="100vh">
+      <WithSubnavigation />
+      <Container maxW={{ sm: "768px", lg: "960px", xl: "1200px" }} h="auto">
         <Home />
         <Differential />
         <Treatments />
         <Carousel />
         <RetanguloPage />
       </Container>
+      <Footer />
     </ChakraProvider>
   );
 }
