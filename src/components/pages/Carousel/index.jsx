@@ -29,7 +29,8 @@ if (!data || data.length) return null
     <Box
       w="full"
       h="100%"
-      mt="64px"
+      mt="64px"       
+ 
       borderBottom="2px solid rgba(2, 14, 31, 0.09)"
        >
       <Heading size="xl" my="3" mb="35px">
@@ -40,13 +41,36 @@ if (!data || data.length) return null
       overflowX='scroll'
       flexDirection='row'
        alignItems='center'
+        __css={{
+          "&::-webkit-scrollbar": {
+            w: "1",
+            h: "1.5",
+          },
+          "&::-webkit-scrollbar-track": {
+            w: "2",
+            h: "1.5",
+          },
+          "&::-webkit-scrollbar-thumb": {
+            borderRadius: "10",
+            bg: `rgba(12, 99, 223, 1)`,
+          },
+        }}
        >
         {arrayCarousel.map((infos) => (
+    
           <LinkBox 
+          borderColor='black'
+          borderRadius='5px'
+          transition=".2s ease-in"
+          _hover={{
+            transform: "scale(1.03)",
+            boxShadow: " 10px 10px 30px rgba(55, 121, 215, 0.25)",
+          }}
           mr='10'
             minW="fit-content"
             mb='20px'
             key={infos.id}
+            
           >
               <Image
                 src={infos.image}
