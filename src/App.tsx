@@ -7,6 +7,8 @@ import { Treatments } from "./components/pages/Treatments";
 import WithSubnavigation from "./components/navbar/navbar";
 import { Carousel } from "./components/pages/Carousel";
 import { Footer } from "./components/Footer";
+import { Clients } from "./components/pages/Clients";
+import { Duvidas } from "./components/pages/Duvidas";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
         <Treatments />
         <Carousel />
         <RetanguloPage />
+        <Clients />
+        <Duvidas />
       </Container>
       <Footer />
     </ChakraProvider>
