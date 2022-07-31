@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { ChakraProvider, theme } from "@chakra-ui/react";
+import { Container } from "@chakra-ui/react";
+import { Home } from "./components/pages/Home";
+import { Differential } from "./components/pages/Differential";
+import { RetanguloPage } from "./components/pages/RetanguloPage";
+import { Treatments } from "./components/pages/Treatments";
+import WithSubnavigation from "./components/navbar/navbar";
+import { Carousel } from "./components/pages/Carousel";
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ChakraProvider theme={theme}>
+      <WithSubnavigation />
+      <Container maxW={{ sm: "768px", lg: "960px", xl: "1200px" }} h="auto">
+        <Home />
+        <Differential />
+        <Treatments />
+        <Carousel />
+        <RetanguloPage />
+      </Container>
+      <Footer />
+    </ChakraProvider>
   );
 }
-
 export default App;
