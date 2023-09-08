@@ -9,9 +9,11 @@ type ButtonProps = {
   colorfont?: string;
   marginTop?: string;
   padding?: string;
+  isInvert?: boolean;
 };
 
 export const ButtonWrapper = ({
+  isInvert,
   text,
   imgIcon,
   width,
@@ -47,6 +49,7 @@ export const ButtonWrapper = ({
         bg="rgba(242, 245, 250, 0.15)"
         borderRadius="2px"
         p={0.5}
+        style={isInvert ? { transform: "rotate(180deg)" } : undefined}
       />
       {text}
     </Link>

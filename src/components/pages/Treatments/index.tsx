@@ -17,14 +17,12 @@ export const Treatments = () => {
   const [state, setState] = useState(4);
 
   useEffect(() => {
-
-    window.screen.width <= 425 ? setState(2) : setState(4)
-
-  },[window.screen.width]);
+    window.screen.width <= 425 ? setState(2) : setState(4);
+  }, [window.screen.width]);
   function detectWindowSize() {
-    window.screen.width <= 425 ? setState(2) : setState(4)
+    window.screen.width <= 425 ? setState(2) : setState(4);
   }
-window.onresize = detectWindowSize
+  window.onresize = detectWindowSize;
   return (
     <Box w="full" h="auto" mt="64px">
       <Heading size="xl" mb="-64px">
@@ -57,8 +55,14 @@ window.onresize = detectWindowSize
       </SimpleGrid>
       {
         <button
-          onClick={() => {
-            state <= 4 ? setState(6) : setState(4);
+          style={{
+            color: "white",
+          }}
+          onClick={(event) => {
+            event.preventDefault();
+            setTimeout(() => {
+              state <= 4 ? setState(6) : setState(4);
+            }, 100);
           }}
         >
           {state <= 4 ? (
@@ -77,6 +81,8 @@ window.onresize = detectWindowSize
               text="Mostrar Menos"
               width={"178px"}
               padding={"20px"}
+              marginTop={"30px"}
+              isInvert={true}
             />
           )}
         </button>
